@@ -1,0 +1,65 @@
+.md-objects{
+	 margin: 0 auto;
+	 > .md-object{
+	 	padding: 0 15px;
+	 }
+}
+.md-arrow{
+	.md-arrow-left,
+	.md-arrow-right{
+		width: 30px;
+		height: 110px;
+		line-height: 110px;
+		background: rgba(0, 0, 0, 0.25);
+		span{
+			position: relative;
+			&:before{
+				font-family: FontAwesome; 
+				font-style: normal; 
+				font-weight: normal; 
+				text-decoration: inherit;
+				color: $white; 
+				font-size: 35px;
+				position: absolute;
+			}
+		}
+	}
+	.md-arrow-left{
+		left: 0;
+		span{
+			left: 5px;
+			&:before{
+				content: "\f104"; 
+			}
+		}
+	}
+	.md-arrow-right{
+		right: 0;
+		span{
+			left: 10px;
+			&:before{
+				content: "\f105"; 
+			}
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.md-objects{
+        display: none;
+    }
+}
+@media(max-width: 640px){
+	.md-arrow{
+		.md-arrow-left,
+		.md-arrow-right{
+			width: 20px;
+			span{
+				&:before{
+					font-size: 25px;
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * @file
+ * Core setup of the Superhero Framework
+ */
+ 
+function superhero_framework_init(){
+    drupal_add_css('#admin-menu .dropdown li li{opacity: 1;}','inline');
+}
